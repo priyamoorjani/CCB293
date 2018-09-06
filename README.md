@@ -35,7 +35,7 @@ file = file[file$V12 %in% c("YRI", "CEU", "CHB","ASW"),]
 #### Command line: 
 
 ```
-~/bin/admixture --cv input.bed $K
+./admixture --cv input.bed $K
 ```
 #### Input:
 This program requires input in plink format (http://zzz.bwh.harvard.edu/plink/data.shtml). Note, K = number of clusters. Run the command for each value of K of interest (for example, 1..6)
