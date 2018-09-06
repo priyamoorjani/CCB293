@@ -22,7 +22,7 @@ poplistname: list         # list of pops to include in the run.
 phylipname:  outfile.phyl # file with Fst values across populations 
 numoutevec: 10            # number of PCs to output 
 ```
-### Plot output
+#### Plot output
 
 Plot the output in R using:
 ```
@@ -40,7 +40,7 @@ file = file[file$V12 %in% c("YRI", "CEU", "CHB","ASW"),]
 #### Input:
 This program requires input in plink format (http://zzz.bwh.harvard.edu/plink/data.shtml). Note, K = number of clusters. Run the command for each value of K of interest (for example, 1..6)
 
-### Plot output
+#### Plot output
 To read in the ADMIXTURE results:
 ```
 file1 = read.table("input.1.Q")
@@ -81,6 +81,6 @@ indivname: infile.ind     # file with individual information
 admixpop:  ASW            # name of admixed population
 refpops:   YRI;CEU        # name of reference (ancestral) population (seperated by semicolon).
 ```
-### Plot output
+#### Plot output
 
 Included in the log file.
