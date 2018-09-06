@@ -8,7 +8,7 @@ Pipeline for running smartpca, ADMIXTURE and ALDER
 ./smartpca -p <parfilename> 
 ```
 #### Input:
-This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). The input geno, snp, and ind files must be consistent.
+This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). 
  
 The program also requires a parameter file. See format below.
 #### Parameter file arguments:
