@@ -59,7 +59,7 @@ barplot(t(as.matrix(file3)), col=rainbow(3), border=NA)
 barplot(t(as.matrix(file4)), col=rainbow(4), border=NA)
 barplot(t(as.matrix(file5)), col=rainbow(5), border=NA)
 par(mar=c(3,4,1,1))
-x = barplot(t(as.matrix(d6)), col=rainbow(6), border=NA)
+x = barplot(t(as.matrix(file6)), col=rainbow(6), border=NA)
 inds = c(rep('YRI', 3), rep('CEU', 3), rep('CHB', 10), rep('TSI', 10), rep('ASW', 10))
 mtext(inds, 1, at=x, las=2)
 ```
