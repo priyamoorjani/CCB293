@@ -50,15 +50,15 @@ This program requires input in plink format (http://zzz.bwh.harvard.edu/plink/da
 #### Plot output
 To read in the ADMIXTURE results:
 ```
+# read output files
 admix_k1 <- read.table("classEx.1.Q")
 admix_k2 <- read.table("classEx.2.Q")
 admix_k3 <- read.table("classEx.3.Q")
 admix_k4 <- read.table("classEx.4.Q")
 admix_k5 <- read.table("classEx.5.Q")
 admix_k6 <- read.table("classEx.6.Q")
-```
-To plot the results:
-```
+
+#plot
 par(mfrow=c(6,1), mar=c(1,4,1,1))
 barplot(t(as.matrix(admix_k1)), col=rainbow(1), border=NA)
 barplot(t(as.matrix(admix_k2)), col=rainbow(2), border=NA)
@@ -67,6 +67,8 @@ barplot(t(as.matrix(admix_k4)), col=rainbow(4), border=NA)
 barplot(t(as.matrix(admix_k5)), col=rainbow(5), border=NA)
 par(mar=c(3,4,1,1))
 x <- barplot(t(as.matrix(admix_k6)), col=rainbow(6), border=NA)
+
+# add pop labels
 inds <- c("CEU", rep("", 97), "YRI", rep("", 18), "CHB", rep("", 102), "YRI", rep("", 88), "ASW", rep("", 60), "TSI", rep("", 106))
 mtext(inds, 1, at=x, las=1, adj=0)
 ```
