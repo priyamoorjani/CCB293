@@ -26,9 +26,16 @@ numoutevec: 10            # number of PCs to output
 
 Plot the output in R using:
 ```
-file <- read.table("outfile.evec")
-plot(file$V2, file$V3, col=as.factor(file$V12), pch=16)
-file = file[file$V12 %in% c("YRI", "CEU", "CHB","ASW"),]
+evecs <- read.table("outfile.evec")
+colnames(evecs) <- c("sample", paste("PC", 1:10, sep=""), "pop")
+
+# filter down to only 4 populations
+evecs <- evecs[evecs$pop %in% c("YRI", "CEU", "CHB", "ASW"),]
+evecs$pop <- factor(evecs$pop)
+
+#plot
+plot(x=evecs$PC1, y=evecs$PC2, col=factor(evecs$pop), xlab="PC1", ylab="PC2")
+legend("bottomleft", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),pch=1)
 ```
 
 ## ADMIXTURE
