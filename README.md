@@ -34,8 +34,8 @@ evecs <- evecs[evecs$pop %in% c("YRI", "CEU", "CHB", "ASW"),]
 evecs$pop <- factor(evecs$pop)
 
 #plot
-plot(x=evecs$PC1, y=evecs$PC2, col=factor(evecs$pop), xlab="PC1", ylab="PC2")
-legend("bottomleft", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),pch=1)
+plot(x=evecs$PC1, y=evecs$PC2, col=factor(evecs$pop), xlab="PC1", ylab="PC2", pch=16)
+legend("bottomleft", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),pch=16)
 ```
 
 ## ADMIXTURE
