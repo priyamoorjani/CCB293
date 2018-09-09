@@ -61,7 +61,7 @@ To plot the results:
 ```
 par(mfrow=c(6,1), mar=c(1,4,1,1))
 barplot(t(as.matrix(out_K1)), col=rainbow(1), border=NA)
-barplot(t(as.matrix(out_K)), col=rainbow(2), border=NA)
+barplot(t(as.matrix(out_K2)), col=rainbow(2), border=NA)
 barplot(t(as.matrix(out_K3)), col=rainbow(3), border=NA)
 barplot(t(as.matrix(out_K4)), col=rainbow(4), border=NA)
 barplot(t(as.matrix(out_K5)), col=rainbow(5), border=NA)
