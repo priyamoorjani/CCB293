@@ -30,6 +30,7 @@ numoutevec: 10            # number of PCs to output
 
 Plot the output in R using:
 ```
+# read output files
 evecs <- read.table("outfile.evec")
 colnames(evecs) <- c("sample", paste("PC", 1:10, sep=""), "pop")
 
