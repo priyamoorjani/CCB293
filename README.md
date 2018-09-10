@@ -1,6 +1,10 @@
 # CCB293
 Pipeline for running smartpca, ADMIXTURE and ALDER
 
+## Datafiles and executable:
+
+/global/scratch/sandrahui/ccb293
+
 ## Smartpca
 
 #### Command line: 
