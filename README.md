@@ -11,10 +11,11 @@ module load fftw
 module load r/3.5.1
 ```
 
-## Datafiles and executable:
-
-/global/scratch/sandrahui/ccb293
-
+## Datafiles and executables:
+```
+/global/scratch/sandrahui/ccb293/    # data
+/global/scratch/sandrahui/ccb293/bin # executables
+```
 ## Smartpca
 
 #### Command line: 
@@ -41,7 +42,7 @@ numoutevec: 10            # number of PCs to output
 Plot the output in R using:
 ```
 # read output files
-evecs <- read.table("outfile.evec")
+evecs <- read.table("classEx.evec")
 colnames(evecs) <- c("sample", paste("PC", 1:10, sep=""), "pop")
 
 # filter down to only 4 populations
