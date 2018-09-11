@@ -1,6 +1,16 @@
 # CCB293
 Pipeline for running smartpca, ADMIXTURE and ALDER
 
+## Enter interactive mode and set up environment
+```
+srun --pty -A ic_ccb293 -p savio -t 01:00:00 bash -i
+module load gcc/6.3.0
+module load gsl
+module load openblas
+module load fftw
+module load r/3.5.1
+```
+
 ## Datafiles and executable:
 
 /global/scratch/sandrahui/ccb293
@@ -40,7 +50,7 @@ evecs$pop <- factor(evecs$pop)
 
 #plot
 plot(x=evecs$PC1, y=evecs$PC2, col=factor(evecs$pop), xlab="PC1", ylab="PC2", pch=16)
-legend("bottomleft", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),pch=16)
+legend("bottomright", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),pch=16)
 ```
 
 ## ADMIXTURE
@@ -74,7 +84,7 @@ par(mar=c(3,4,1,1))
 x <- barplot(t(as.matrix(admix_k6)), col=rainbow(6), border=NA)
 
 # add pop labels
-inds <- c("CEU", rep("", 97), "YRI", rep("", 18), "CHB", rep("", 102), "YRI", rep("", 88), "ASW", rep("", 60), "TSI", rep("", 106))
+inds <- c("ASW", rep("", 61), "CEU", rep("", 99), "CHB", rep("", 103), "TSI", rep("", 107), "YRI", rep("", 108))
 mtext(inds, 1, at=x, las=1, adj=0)
 ```
 
