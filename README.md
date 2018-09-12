@@ -18,6 +18,9 @@ module load r/3.5.1
 ```
 ## Smartpca
 
+#### Documentation:
+https://github.com/chrchang/eigensoft/blob/master/POPGEN/README
+
 #### Command line: 
 ```
 ./smartpca -p <parfilename> 
@@ -55,8 +58,11 @@ legend("bottomright", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),
 ```
 
 ## ADMIXTURE
-#### Command line: 
 
+#### Documentation:
+http://www.genetics.ucla.edu/software/admixture/admixture-manual.pdf
+
+#### Command line: 
 ```
 ./admixture --cv input.bed $K
 ```
@@ -90,6 +96,10 @@ mtext(inds, 1, at=x, las=1, adj=0)
 ```
 
 ## ALDER
+
+#### Documentation:
+https://github.com/priyamoorjani/CCB293/blob/master/ALDER.txt
+
 #### Command line: 
 ```
 ./alder -p <parfilename> 
