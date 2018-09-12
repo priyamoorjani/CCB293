@@ -15,6 +15,7 @@ module load r/3.5.1
 ```
 /global/home/users/sandrahui/ccb293/    # data
 /global/home/users/sandrahui/ccb293/bin # executables
+~sandrahui/ccb293
 ```
 ## Smartpca
 
