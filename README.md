@@ -25,6 +25,8 @@ https://github.com/chrchang/eigensoft/blob/master/POPGEN/README
 #### Command line: 
 ```
 ./smartpca -p classEx.smartpca.par
+/global/scratch/sandrahui/ccb293/bin/smartpca -p classEx.smartpca.par
+~sandrahui/ccb293/bin/smartpca -p classEx.smartpca.par
 ```
 #### Input:
 This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). 
@@ -67,6 +69,8 @@ http://www.genetics.ucla.edu/software/admixture/admixture-manual.pdf
 #### Command line: 
 ```
 ./admixture --cv classEx.bed $K
+/global/scratch/sandrahui/ccb293/bin/admixture --cv classEx.bed $K
+~sandrahui/ccb293/bin/admixture --cv classEx.bed $K
 ```
 #### Input:
 This program requires input in plink format (http://zzz.bwh.harvard.edu/plink/data.shtml). Note, K = number of clusters. Run the command for each value of K of interest (for example, 1..6)
@@ -105,6 +109,8 @@ https://github.com/priyamoorjani/CCB293/blob/master/ALDER.txt
 #### Command line: 
 ```
 ./alder -p classEx.alder.par
+/global/scratch/sandrahui/ccb293/bin/alder -p classEx.alder.par
+~sandrahui/ccb293/bin/alder -p classEx.alder.par
 ```
 #### Input:
 This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). The input geno, snp, and ind files must be consistent.
