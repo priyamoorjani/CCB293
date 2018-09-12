@@ -1,0 +1,9 @@
+genotypename: classEx.geno     # file with genotype information
+snpname:      classEx.snp      # file with snp information
+indivname:    classEx.ind      # file with individual information   
+poplistname:  classEx.pop.list # list of pops to include in the run.
+evecoutname:  classEx.evec     # output file of eigenvectors.
+evaloutname:  classEx.eval     # output file of all eigenvalues
+phylipname:   classEx.phyl     # file with Fst values across populations 
+numoutevec:   10               # number of PCs to output 
+numthreads:   1                # if running interactively, use 1 only

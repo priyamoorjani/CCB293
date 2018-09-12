@@ -1,0 +1,6 @@
+genotypename: classEx.geno # file with genotype information
+snpname:      classEx.snp  # file with snp information
+indivname:    classEx.ind  # file with individual information   
+admixpop:     ASW          # name of admixed population
+refpops:      YRI;CEU      # name of reference (ancestral) population (seperated by semicolon).
+checkmap:     NO
