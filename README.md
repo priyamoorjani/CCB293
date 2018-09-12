@@ -39,6 +39,7 @@ evaloutname: outfile.eval # output file of all eigenvalues
 poplistname: list         # list of pops to include in the run.
 phylipname:  outfile.phyl # file with Fst values across populations 
 numoutevec: 10            # number of PCs to output 
+numoutliter: 0            # number of outlier inds to remove. 
 ```
 #### Plot output
 
