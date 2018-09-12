@@ -13,8 +13,8 @@ module load r/3.5.1
 
 ## Datafiles and executables:
 ```
-/global/scratch/sandrahui/ccb293/    # data
-/global/scratch/sandrahui/ccb293/bin # executables
+/global/home/users/sandrahui/ccb293/    # data
+/global/home/users/sandrahui/ccb293/bin # executables
 ```
 ## Smartpca
 
