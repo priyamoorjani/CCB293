@@ -51,7 +51,7 @@ numoutliter: 0                 # number of outlier inds to remove.
 
 Plot the output in R using:
 ```
-# start R terminal
+# start R 
 R [enter]
 
 # read output files
