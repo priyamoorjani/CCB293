@@ -29,7 +29,6 @@ https://github.com/chrchang/eigensoft/blob/master/POPGEN/README
 ```
 cd ~/ccb293
 ./bin/smartpca -p classEx.smartpca.par
-
 ```
 #### Input:
 This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). 
