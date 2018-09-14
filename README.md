@@ -123,7 +123,7 @@ https://github.com/priyamoorjani/CCB293/blob/master/ALDER.txt
 
 #### Command line: 
 ```
-./bin/alder -p classEx.alder.par
+./bin/alder -p classEx.alder.par >alder.log
 ```
 #### Input:
 This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). The input geno, snp, and ind files must be consistent.
