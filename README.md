@@ -18,7 +18,7 @@ module load r/3.5.1
 
 # copy folder to your home directory
 cd ~/
-cp -r /global/home/users/sandrahui/ccb293 .
+cp -rp /global/home/users/sandrahui/ccb293 .
 ```
 ## Smartpca
 
@@ -27,7 +27,7 @@ https://github.com/chrchang/eigensoft/blob/master/POPGEN/README
 
 #### Command line: 
 ```
-cd ~/ccb293
+cd ~/ccb293/classEx
 ./bin/smartpca -p classEx.smartpca.par
 ```
 #### Input:
@@ -62,9 +62,12 @@ colnames(evecs) <- c("sample", paste("PC", 1:10, sep=""), "pop")
 evecs <- evecs[evecs$pop %in% c("YRI", "CEU", "CHB", "ASW"),]
 evecs$pop <- factor(evecs$pop)
 
-#plot
+# plot
+# png("classEx.PCA.png") # uncomment to save as png
+# pdf("classEx.PCA.pdf") # uncomment to save as pdf
 plot(x=evecs$PC1, y=evecs$PC2, col=factor(evecs$pop), xlab="PC1", ylab="PC2", pch=16)
 legend("bottomright", legend=levels(evecs$pop), col=1:length(levels(evecs$pop)),pch=16)
+# dev.off() # uncomment to save image
 
 # quit R
 q() [enter]
@@ -98,7 +101,10 @@ admix_k4 <- read.table("classEx.4.Q")
 admix_k5 <- read.table("classEx.5.Q")
 admix_k6 <- read.table("classEx.6.Q")
 
-#plot
+# plot
+# pdf("classEx.admixPlot.pdf") # uncomment to save as pdf
+# png("classEx.admixPlot.png") # uncomment to save as png
+par(mfrow=c(8,1), mar=c(1,4,1,1))
 par(mfrow=c(6,1), mar=c(1,4,1,1))
 barplot(t(as.matrix(admix_k1)), col=rainbow(1), border=NA)
 barplot(t(as.matrix(admix_k2)), col=rainbow(2), border=NA)
@@ -111,6 +117,7 @@ x <- barplot(t(as.matrix(admix_k6)), col=rainbow(6), border=NA)
 # add pop labels
 inds <- c("ASW", rep("", 61), "CEU", rep("", 99), "CHB", rep("", 103), "TSI", rep("", 107), "YRI", rep("", 108))
 mtext(inds, 1, at=x, las=1, adj=0)
+# dev.off() # uncomment to save image
 
 # Quit R
 q() [enter]
@@ -123,7 +130,7 @@ https://github.com/priyamoorjani/CCB293/blob/master/ALDER.txt
 
 #### Command line: 
 ```
-./bin/alder -p classEx.alder.par >alder.log
+./bin/alder -p classEx.alder.par &> alder.log
 ```
 #### Input:
 This program requires data in EIGENSTRAT format (See https://reich.hms.harvard.edu/software/InputFileFormats). The input geno, snp, and ind files must be consistent.
