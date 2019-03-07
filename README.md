@@ -23,6 +23,7 @@ cp -rp /global/home/users/sandrahui/ccb293 .
 ## Smartpca
 
 #### Documentation:
+Population Structure and Eigenanalysis. https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020190
 https://github.com/chrchang/eigensoft/blob/master/POPGEN/README
 
 #### Command line: 
@@ -76,6 +77,7 @@ q() [enter]
 ## ADMIXTURE
 
 #### Documentation:
+Fast model-based estimation of ancestry in unrelated individuals.https://genome.cshlp.org/content/19/9/1655.full
 http://www.genetics.ucla.edu/software/admixture/admixture-manual.pdf
 
 #### Command line: 
@@ -126,6 +128,7 @@ q() [enter]
 ## ALDER
 
 #### Documentation:
+Inferring Admixture Histories of Human Populations Using Linkage Disequilibrium. http://www.genetics.org/content/193/4/1233.full
 https://github.com/priyamoorjani/CCB293/blob/master/ALDER.txt
 
 #### Command line: 
